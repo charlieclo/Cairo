@@ -14,6 +14,8 @@
 		<module>cairo-core-repository</module>
 		<module>cairo-core-service</module>
 		<module>cairo-core-service-impl</module>
+		<module>cairo-core-service-model</module>
+		<module>cairo-core-utilities</module>
 		<module>cairo-core-web</module>
 		<module>cairo-core-web-model</module>
 	</modules>
@@ -34,12 +36,14 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-boot-starter-data-jpa.version>2.2.0.RELEASE</spring-boot-starter-data-jpa.version>
+		<spring-boot-starter-data-elasticsearch.version>2.2.0.RELEASE</spring-boot-starter-data-elasticsearch.version>
 		<spring-data-redis.version>2.2.0.RELEASE</spring-data-redis.version>
 		<spring-cloud-starter-sleuth.version>2.1.4.RELEASE</spring-cloud-starter-sleuth.version>
 		<spring-cloud-starter-openfeign.version>2.1.3.RELEASE</spring-cloud-starter-openfeign.version>
 		<postgresql.version>42.2.8</postgresql.version>
 		<jedis.version>3.1.0</jedis.version>
 		<apache-common-lang3.version>3.9</apache-common-lang3.version>
+		<fasterxml-jackson.version>2.10.0</fasterxml-jackson.version>
 
 		<!-- Start Class -->
 		<start-class>com.gdn.cairo.core.CairoCoreApplication</start-class>
@@ -96,6 +100,13 @@
 			<version>${spring-boot-starter-data-jpa.version}</version>
 		</dependency>
 
+		<!-- Spring Boot Starter Data ElasticSearch -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+			<version>${spring-boot-starter-data-elasticsearch.version}</version>
+		</dependency>
+
 		<!-- Spring Data Redis -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>
@@ -149,6 +160,13 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>${apache-common-lang3.version}</version>
+		</dependency>
+
+		<!-- Faster XML Jackson -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${fasterxml-jackson.version}</version>
 		</dependency>
 	</dependencies>
 

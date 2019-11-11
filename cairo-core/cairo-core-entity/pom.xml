@@ -11,6 +11,12 @@
 
     <artifactId>cairo-core-entity</artifactId>
 
-    <dependencies></dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>com.gdn.cairo</groupId>
+            <artifactId>cairo-core-utilities</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
